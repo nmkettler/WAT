@@ -1,7 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 
-$primaryColor: #123456;
+$primaryColor: #11325f;
+$primaryWhite: #efefef;
 $secondaryColor: #000000;
 
 * {
@@ -23,7 +24,7 @@ h1{margin:0;}
 /*======================= Navigation =============================*/
 
 .navbar{
-	background: rgba(0,0,0,0);
+	background: $primaryColor;
 	padding: 15px 0px;
 	margin-bottom: 0;
 	border:none;
@@ -34,11 +35,62 @@ h1{margin:0;}
     transition: all 200ms ease-in;
 }
 .navbar-default .navbar-nav li a{
-	color:#fff;
-
+	font-size: 15px;
+	color: $primaryWhite;
 	&:hover{
 		color:#f5f7d8;
 	}
+}
+
+
+.logo{
+	width:150px;
+}
+/*============== Side Navigation ============*/
+
+.menuToggleButton{
+	left: 0;
+    text-align: center;
+    top: 50%;
+	position: fixed;
+	color: $primaryWhite;
+	&:hover{
+		color: red;
+	}
+}
+
+.sidebar-offcanvas{
+	display:none;
+	top: 35%;
+	position:fixed;
+}
+
+#sidebar{	
+	background: $primaryColor;
+
+}
+
+/*======================= First Section =============================*/
+
+
+#homebuttons{
+	font-weight: 700;
+	font-size: 20px;
+	border:none;
+	width: 190px;
+	height: 60px;
+	margin: 0px 10px;
+	border-radius: 0 !important;
+}
+
+#centerButtonGroup{
+	left: 0;
+    line-height: 200px;
+    margin-top: -150px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
 }
 
 .main-hero-bg{
@@ -53,3 +105,46 @@ h1{margin:0;}
  	 margin-top: -50px;
  	 position:relative;
 	}
+
+	.headerInfo{
+		@extend #centerButtonGroup;
+	}
+
+	#contactButton{
+		@extend #homebuttons;
+	}
+
+	#learnMoreButton{
+		@extend #homebuttons;
+	}
+
+	.scrollArrowOuter{ /* Make parent elemnts width 100% so child (scrollArrow) can center*/
+	position:absolute;
+	bottom:10px;
+	width:100%;
+	}
+	.scrollArrow{	
+		width:70px; 
+		height:70px;
+		margin:0px auto;
+		border: 1px solid #fff;
+		border-radius:50px;
+		background: rgba(0,0,0,0);
+		color: #fff;
+		-webkit-transition: all 200ms ease-in;
+	    -ms-transition: all 200ms ease-in;
+	    -moz-transition: all 200ms ease-in;
+		transition: all 200ms ease-in;		
+
+		&:hover{
+			background: $primaryColor;
+			color: $primaryWhite;
+			border-color: $secondaryColor;
+
+		}
+	}
+
+	.scrollArrow span{
+		margin-left: 10px;
+	}
+
