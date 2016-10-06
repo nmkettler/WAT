@@ -1,5 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto';
-@import 'https://fonts.googleapis.com/css?family=Raleway';
+@import "https://fonts.googleapis.com/css?family=Roboto";
+@import "https://fonts.googleapis.com/css?family=Raleway";
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ h1 {
 
 /*======================= Navigation =============================*/
 .navbar {
-  background: #11325f;
+  background: rgba(255, 255, 255, 0.5);
   padding: 15px 0px;
   margin-bottom: 0;
   border: none;
@@ -28,7 +28,7 @@ h1 {
 
 .navbar-default .navbar-nav li a {
   font-size: 15px;
-  color: #efefef; }
+  color: gray; }
   .navbar-default .navbar-nav li a:hover {
     color: #f5f7d8; }
 
@@ -44,14 +44,6 @@ h1 {
   color: #efefef; }
   .menuToggleButton:hover {
     color: red; }
-
-.sidebar-offcanvas {
-  display: none;
-  top: 35%;
-  position: fixed; }
-
-#sidebar {
-  background: #11325f; }
 
 /*======================= First Section =============================*/
 #homebuttons, #contactButton, #learnMoreButton {
@@ -109,3 +101,120 @@ h1 {
 
 .scrollArrow span {
   margin-left: 10px; }
+
+/*======================= Sliding Menu =============================*/
+#c-button--slide-left {
+  z-index: 1000;
+  left: 0;
+  text-align: center;
+  top: 50%;
+  position: fixed;
+  color: #efefef; }
+  #c-button--slide-left:hover {
+    color: red; }
+
+.c-menu {
+  position: fixed;
+  z-index: 200;
+  background-color: rgba(74, 74, 74, 0.7);
+  transition: transform 0.3s; }
+
+.c-menu__items {
+  list-style: none;
+  margin: 100px 0 0 0;
+  padding: 0; }
+
+/**
+ * Close button resets.
+ */
+.c-menu__close {
+  color: #fff;
+  background-color: #3184a1;
+  font-size: 14px;
+  border: none;
+  box-shadow: none;
+  border-radius: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  z-index: 1001; }
+
+/**
+ * Close button resets.
+ */
+.c-menu__close:focus {
+  outline: none; }
+
+/**
+ * Body states.
+ *
+ * When a menu is active, we want to hide the overflows on the body to prevent
+ * awkward document scrolling.
+ */
+body.has-active-menu {
+  overflow: hidden; }
+
+/**
+ * Mask component
+ */
+.c-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s; }
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s; }
+
+.c-menu--slide-left {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; }
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left {
+    width: 300px; } }
+.c-menu--slide-left .c-menu__item {
+  display: block;
+  text-align: center;
+  border-top: solid 1px #b5dbe9;
+  border-bottom: solid 1px #3184a1; }
+
+.c-menu--slide-left .c-menu__item:first-child {
+  border-top: none; }
+
+.c-menu--slide-left .c-menu__item:last-child {
+  border-bottom: none; }
+
+.c-menu--slide-left .c-menu__link {
+  display: block;
+  padding: 12px 24px;
+  color: #fff; }
+
+.c-menu--slide-left .c-menu__close {
+  display: block;
+  padding: 12px 24px;
+  width: 100%; }
+
+.c-menu--slide-left {
+  top: 0;
+  left: 0;
+  transform: translateX(-100%); }
+
+@media all and (min-width: 320px) {
+  .c-menu--slide-left {
+    transform: translateX(-300px); } }
+.c-menu--slide-left.is-active {
+  transform: translateX(0); }
+
+/*# sourceMappingURL=style.css.map */
