@@ -25,6 +25,12 @@ ul{list-style-type:none;}
 a:hover{text-decoration:none;}
 h1,h2,h3,h4{margin:0;}
 
+button:hover{
+	-webkit-transition: all 200ms ease-in;
+	    -ms-transition: all 200ms ease-in;
+	    -moz-transition: all 200ms ease-in;
+		transition: all 200ms ease-in;	
+}
 /*======================= Navigation =============================*/
 
 .navbar{
@@ -81,7 +87,7 @@ ul#numberList.dropdown-menu ul a li{
 
 	&:hover{
 		background-color: #d96810;
-		color: gray;
+		color: #e7e7e7;
 	}
 }
 
@@ -125,8 +131,28 @@ ul#numberList.dropdown-menu ul a li{
  	 position:relative;
 	}
 
+	.headerText{
+	    width: 35%;	
+		
+	}
+
 	.headerInfo{
-		@extend #centerButtonGroup;
+		left: 0;
+	    line-height: 200px;
+	    margin: -150px 0 15px 50px;
+	    position: absolute;
+	    top: 50%;
+	    width: 100%;	}
+
+	.headerInfo h1{
+		color: $primaryWhite;
+		font-weight: 900;
+		font-size: 60px;
+
+	}
+	.headerInfo h4 {
+		color: $primaryWhite;
+		font-size: 25px;
 	}
 
 	#contactButton{
@@ -135,6 +161,13 @@ ul#numberList.dropdown-menu ul a li{
 
 	#learnMoreButton{
 		@extend #homebuttons;
+		background-color: #f87474;
+		border: 1px solid #000;
+		&:hover{
+			background-color: rgba(0,0,0,0);
+			border: 1px solid #fff;
+
+		}
 	}
 
 	.scrollArrowOuter{ /* Make parent elemnts width 100% so child (scrollArrow) can center*/
@@ -177,8 +210,9 @@ ul#numberList.dropdown-menu ul a li{
 	}
 	
 }
-.secondSection{
-	position:relative;
+.second-section{
+	margin-bottom: 0; margin-top: 0;
+	padding: 44px 0;
 	width:100%;
 	h1{
 		font-size: 40px;
@@ -212,6 +246,78 @@ ul#numberList.dropdown-menu ul a li{
 	margin-top: 30px;
 }
 
+.featured_certified_section{
+	margin-top: 42px;
+}
+
 .certification_title{
 	font-size:20px;
+	margin-top: 25px;
+	text-align:right;
+	font-weight:700;
+}
+
+.certification_image_container a img{
+	width: 100px;
+	margin:0;
+	padding:0;
+	vertical-align: middle;
+}
+
+/*======================= Third Section =============================*/
+
+.third_section{
+	background-color: #6088e0;
+	color: #fff;
+	margin-bottom: 0; margin-top: 0;
+	padding: 44px 0;
+}
+
+.training_button{
+	background-color: rgba(0,0,0,0);
+	padding: 5px 15px;
+	font-size: 20px;
+	color: $primaryWhite;
+	margin-top: 20px;
+	border-color: $primaryWhite;
+	&:hover{
+		background-color: #f87474;	
+		color: $primaryWhite;
+
+	}
+}
+
+/*======================= Footer =============================*/
+
+.site-footer{
+	padding: 66px 0;
+	background-color: $primaryBlue;
+	color: $primaryWhite;
+}
+.footer_list li a{
+	color: $primaryGray;
+	font-weight: 100;
+	line-height: 20px;
+	white-space: nowrap;
+	font-size:14px;
+
+}
+
+.footer_sections h3{
+		font-size:20px;
+		font-weight: 600;
+		margin-bottom: 11px;
+	
+
+}
+
+.footer_bottom{
+	margin-top: 44px;
+}
+
+.footer_sections a{
+		margin-left: 10px;
+		font-size: 20px;
+		color:$primaryGray;
+	
 }
