@@ -480,7 +480,7 @@ ul#numberList.dropdown-menu ul a li{
   text-decoration: none;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-
+  z-index: 9999;
 }
 .service_breadcrumbs li{
 	font-size: 20px;
@@ -626,3 +626,6 @@ ul#numberList.dropdown-menu ul a li{
     opacity: 0;
   }
 }
+
+.post{ visibility: hidden; }
+.animated { visibility: visible !important; }

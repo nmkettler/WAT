@@ -31,6 +31,15 @@ button:hover{
 	    -moz-transition: all 200ms ease-in;
 		transition: all 200ms ease-in;	
 }
+
+#centerItems{
+	left: 0;
+    line-height: 200px;
+    margin-top: -150px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+}
 /*======================= Navigation =============================*/
 
 .navbar{
@@ -78,7 +87,7 @@ ul#numberList.dropdown-menu ul a li{
 }
 
 .navButton{
-	background-color: #f47410;
+	background-color: #f87474;
 	color: #e7e7e7;
 	font-weight: 700;
 	border:none;
@@ -464,6 +473,10 @@ ul#numberList.dropdown-menu ul a li{
 	background: url(assets/bg-slide-down.jpg) no-repeat center center;
 }
 
+ .active
+{
+    background-color:green;
+}
 
 }
 .service_breadcrumbs{
@@ -480,7 +493,7 @@ ul#numberList.dropdown-menu ul a li{
   text-decoration: none;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-
+  z-index: 9999;
 }
 .service_breadcrumbs li{
 	font-size: 20px;
@@ -534,7 +547,52 @@ ul#numberList.dropdown-menu ul a li{
 	background: url(assets/bg-slide-down.jpg) no-repeat center center;
 }
 }
+/*=============================================== Training Page ===================================================*/
 
+
+.training_main_container{
+	min-height: 995px; 
+	width:100%;
+	opacity: 1; 
+	background: url(assets/training-sec-one-bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	 background-size: cover;
+ 	 margin-top: -50px;
+ 	 position:relative;
+	
+}
+
+.training_inner{
+	margin: 150px auto;
+	top: 50%;
+	width:60%;
+	color: $primaryBlack;
+	background-color: rgba(255,255,255,0.93);
+	padding: 100px;
+
+	h1{
+		font-size: 60px;
+		font-weight: 100px;
+	}
+	h4{
+		margin-top: 10px;
+		font-size: 14px;
+		line-height: 15px;
+	}
+}
+
+.training_list{
+	margin-top: 20px;
+	columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+    li{
+    	font-size: 20px;
+    }
+}
 /*======================= Footer =============================*/
 
 .site-footer{
@@ -626,3 +684,6 @@ ul#numberList.dropdown-menu ul a li{
     opacity: 0;
   }
 }
+
+.post{ visibility: hidden; }
+.animated { visibility: visible !important; }

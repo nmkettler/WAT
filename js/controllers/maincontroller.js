@@ -1,12 +1,18 @@
 app.controller("MainController", ['$scope', '$routeParams','$location', function($scope, $routeParams, $location) {
 
     $scope.date= new Date();
+    $scope.newTraining = "Training Page";
   
     //typed.js functionality
         $(".typer").typed({
-            strings: ["Asbestos Testing", "Lead Testing", "Mold Testing", "Anything"],
+            strings: ["Asbestos Testing", "Lead Testing", "Mold Testing"],
             typeSpeed: 100
           });
+
+        $('.post').addClass('.hide_me').viewportChecker({
+          classToAdd: 'visible animated fadeIn',
+          offset: 100
+        });
 
   	$('ul.nav li.dropdown').hover(function(){
       $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeIn(500);
@@ -22,6 +28,7 @@ app.directive("scrollToDiv", ["$interval", function($interval){
   return{
     restrict: "A",
     link: function(scope, elem, attrs) {
+
       $('.scrollArrow, #learnMoreButton').click(function(){
       $('html, body').animate({
         scrollTop: $(".second-section").offset().top},
@@ -84,32 +91,11 @@ app.directive("slideToShowDiv", function(){
   return{
     restrict: "A",
     link: function(scope, elem, attrs){
-      $('#show_asbestos_lab').click(function(){
-        if($(".asbestos_lab").is(":hidden")) {
-          $(".asbestos_lab").slideDown("slow");
+      $('.labServiceButton').click(function(){
+        if($(this).next("div").is(":hidden")) {
+          $(this).next("div").slideDown("slow");
         }else{
-          $(".asbestos_lab").slideUp("slow");
-        }
-      });
-      $('#show_lead_lab').click(function(){
-        if($(".lead_lab").is(":hidden")) {
-          $(".lead_lab").slideDown("slow");
-        }else{
-          $(".lead_lab").slideUp("slow");
-        }
-      });
-      $('#show_mold_lab').click(function(){
-        if($(".mold_lab").is(":hidden")) {
-          $(".mold_lab").slideDown("slow");
-        }else{
-          $(".mold_lab").slideUp("slow");
-        }
-      });
-      $('#show_demo_lab').click(function(){
-        if($(".demo_lab").is(":hidden")) {
-          $(".demo_lab").slideDown("slow");
-        }else{
-          $(".demo_lab").slideUp("slow");
+          $(this).next("div").slideUp("slow");
         }
       });
     }

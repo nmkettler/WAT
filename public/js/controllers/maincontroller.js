@@ -8,6 +8,11 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
             typeSpeed: 100
           });
 
+        $('.post').addClass('.hide_me').viewportChecker({
+          classToAdd: 'visible animated fadeIn',
+          offset: 100
+        });
+
   	$('ul.nav li.dropdown').hover(function(){
       $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeIn(500);
     }, function(){
