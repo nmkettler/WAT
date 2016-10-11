@@ -1,5 +1,5 @@
-@import "https://fonts.googleapis.com/css?family=Roboto";
-@import "https://fonts.googleapis.com/css?family=Raleway";
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 * {
   margin: 0;
   padding: 0;
@@ -94,7 +94,6 @@ ul#numberList.dropdown-menu ul a li {
     height: 60px;
     margin: 0px 10px;
     border-radius: 0 !important; }
-
   #centerButtonGroup {
     left: 0;
     line-height: 200px;
@@ -103,7 +102,6 @@ ul#numberList.dropdown-menu ul a li {
     text-align: center;
     top: 50%;
     width: 100%; }
-
   .main-hero-bg {
     min-height: 995px;
     width: 100%;
@@ -115,10 +113,8 @@ ul#numberList.dropdown-menu ul a li {
     background-size: cover;
     margin-top: -50px;
     position: relative; }
-
   .headerText {
     width: 35%; }
-
   .headerInfo {
     left: 0;
     line-height: 200px;
@@ -126,29 +122,24 @@ ul#numberList.dropdown-menu ul a li {
     position: absolute;
     top: 50%;
     width: 100%; }
-
   .headerInfo h1 {
     color: #e7e7e7;
     font-weight: 900;
     font-size: 60px; }
-
   .headerInfo h4 {
     color: #e7e7e7;
     font-size: 25px; }
-
   #learnMoreButton {
     background-color: #f87474;
     border: 1px solid #000; }
     #learnMoreButton:hover {
       background-color: transparent;
       border: 1px solid #fff; }
-
   .scrollArrowOuter {
     /* Make parent elemnts width 100% so child (scrollArrow) can center*/
     position: absolute;
     bottom: 10px;
     width: 100%; }
-
   .scrollArrow {
     width: 70px;
     height: 70px;
@@ -165,9 +156,9 @@ ul#numberList.dropdown-menu ul a li {
       background: #11325f;
       color: #e7e7e7;
       border-color: #000000; }
-
   .scrollArrow span {
     margin-left: 10px; } }
+
 @media screen and (max-width: 785px) {
   #mobilehomebuttons, #contactButton, #learnMoreButton {
     font-weight: 700;
@@ -177,7 +168,6 @@ ul#numberList.dropdown-menu ul a li {
     height: 30px;
     margin: 0px 10px;
     border-radius: 0 !important; }
-
   .main-hero-bg {
     min-height: 667px;
     width: 100%;
@@ -189,7 +179,6 @@ ul#numberList.dropdown-menu ul a li {
     background-size: cover;
     margin-top: -50px;
     position: relative; }
-
   .headerText {
     left: 0;
     line-height: 200px;
@@ -198,7 +187,6 @@ ul#numberList.dropdown-menu ul a li {
     text-align: center;
     top: 50%;
     width: 100%; }
-
   .headerInfo {
     left: 0;
     line-height: 200px;
@@ -207,35 +195,29 @@ ul#numberList.dropdown-menu ul a li {
     text-align: center;
     top: 50%;
     width: 100%; }
-
   .headerInfo h1 {
     color: #e7e7e7;
     font-weight: 900;
     font-size: 30px; }
-
   .headerInfo h4 {
     color: #e7e7e7;
     font-size: 15px; }
-
   #learnMoreButton {
     background-color: #f87474;
     border: 1px solid #000; }
     #learnMoreButton:hover {
       background-color: transparent;
       border: 1px solid #fff; }
-
   .scrollArrowOuter {
     /* Make parent elemnts width 100% so child (scrollArrow) can center*/
     position: absolute;
     bottom: 10px;
     width: 100%; }
-
   .scrollArrowOuter {
     /* Make parent elemnts width 100% so child (scrollArrow) can center*/
     position: absolute;
     bottom: 10px;
     width: 100%; }
-
   .scrollArrow {
     width: 35px;
     height: 35px;
@@ -252,10 +234,10 @@ ul#numberList.dropdown-menu ul a li {
       background: #11325f;
       color: #e7e7e7;
       border-color: #000000; }
-
   .scrollArrow span {
     margin-left: 5px;
     font-size: 7px; } }
+
 /*======================= Second Section =============================*/
 .secSectionTitle {
   margin: 75px 0px 30px 0; }
@@ -332,7 +314,6 @@ ul#numberList.dropdown-menu ul a li {
   .services_page_container img {
     width: 300px;
     margin-top: 30px; }
-
   .labServiceButton {
     background-color: #f87474;
     padding: 5px 15px;
@@ -343,39 +324,30 @@ ul#numberList.dropdown-menu ul a li {
     .labServiceButton:hover {
       background-color: #172735;
       color: #e7e7e7; }
-
   .service_main_title {
     font-size: 60px;
     font-weight: 700; }
-
   .services_page_container {
     margin-top: 66px; }
-
   .services_individual_titles {
     margin: 22px 0;
     font-size: 30px;
     font-weight: 700; }
-
   .inner_services_container {
     padding: 32px 5px 32px 200px; }
-
   .labServiceButton {
     margin-bottom: 20px; }
-
   .asbestos_lab, .lead_lab, .mold_lab, .demo_lab {
     display: none; }
-
   .asbestos_row, .lead_row, .mold_row, .demo_row {
     margin-top: 100px; }
-
   .asbestos_row {
     background: url(assets/bg-slide-down.jpg) no-repeat center center; }
-
   .mold_row {
     background: url(assets/bg-slide-down.jpg) no-repeat center center; }
-
   .active {
     background-color: green; } }
+
 .service_breadcrumbs {
   position: fixed;
   top: 50%;
@@ -402,45 +374,36 @@ ul#numberList.dropdown-menu ul a li {
 @media screen and (max-width: 785px) {
   .service_breadcrumbs {
     display: none; }
-
   .services_page_container img {
     width: 300px;
     margin-top: 30px; }
-
   .asbestos_lab, .lead_lab, .mold_lab, .demo_lab {
     display: none; }
-
   .service_main_title {
     font-size: 60px;
     font-weight: 700; }
-
   .services_page_container {
     margin-top: 66px; }
-
   .services_individual_titles {
     margin: 22px 0;
     font-size: 30px;
     font-weight: 700; }
-
   .asbestos_row, .lead_row, .mold_row, .demo_row {
     margin-top: 100px; }
-
   .asbestos_row {
     background: url(assets/bg-slide-down.jpg) no-repeat center center; }
-
   .mold_row {
     background: url(assets/bg-slide-down.jpg) no-repeat center center; } }
+
 /*=============================================== Training Page ===================================================*/
 .training_main_container {
-  min-height: 995px;
-  width: 100%;
-  opacity: 1;
-  background: url(assets/training-sec-one-bg.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: url(assets/training-sec-one-bg.jpg);
+  background-position: top;
+  background-position-x: center;
+  background-position-y: top;
   background-size: cover;
   margin-top: -50px;
+  width: 100%;
   position: relative; }
 
 .training_inner {
@@ -459,12 +422,24 @@ ul#numberList.dropdown-menu ul a li {
     line-height: 15px; }
 
 .training_list {
-  margin-top: 20px;
+  margin-top: 42px;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2; }
   .training_list li {
     font-size: 20px; }
+
+.training_box_bottom_sec {
+  margin-top: 42px; }
+
+.training_sign_up_btn {
+  background-color: #f87474;
+  color: #e7e7e7;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-top: 20px; }
 
 /*======================= Footer =============================*/
 .site-footer {
@@ -544,10 +519,9 @@ ul#numberList.dropdown-menu ul a li {
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     opacity: 0; } }
+
 .post {
   visibility: hidden; }
 
 .animated {
   visibility: visible !important; }
-
-/*# sourceMappingURL=style.css.map */

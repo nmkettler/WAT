@@ -2,13 +2,18 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
 
     $scope.date= new Date();
     $scope.newTraining = "Training Page";
-  
+
+    $scope.go = function(path){
+      $location.path(path);
+    }
+
     //typed.js functionality
         $(".typer").typed({
             strings: ["Asbestos Testing", "Lead Testing", "Mold Testing"],
             typeSpeed: 100
           });
 
+        //animated.js animation
         $('.post').addClass('.hide_me').viewportChecker({
           classToAdd: 'visible animated fadeIn',
           offset: 100
@@ -27,33 +32,27 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
 app.directive("scrollToDiv", ["$interval", function($interval){
   return{
     restrict: "A",
-    link: function(scope, elem, attrs) {
-
+    link: function(scope, elem, attrs) {   
       $('.scrollArrow, #learnMoreButton').click(function(){
       $('html, body').animate({
         scrollTop: $(".second-section").offset().top},
         'slow');
     });
-      $('#asbestos_breadcrumb').click(function(){
-      $('html, body').animate({
-        scrollTop: $(".asbestos_row").offset().top},
-        'slow');
-    });
-      $('#lead_breadcrumb').click(function(){
-      $('html, body').animate({
-        scrollTop: $(".lead_row").offset().top},
-        'slow');
-    });
-      $('#mold_breadcrumb').click(function(){
-      $('html, body').animate({
-        scrollTop: $(".mold_row").offset().top},
-        'slow');
-    });
-      $('#demo_breadcrumb').click(function(){
-      $('html, body').animate({
-        scrollTop: $(".demo_row").offset().top},
-        'slow');
-    });
+
+      $('.menu').click(function(event){
+        event.preventDefault();
+        var defaultAnchorOffset = 0;
+        var anchor = $(this).attr('data-attr-scroll');
+        var anchorOffset = $('#' + anchor).attr('data-scroll-offset');
+
+        if(!anchorOffset)
+          anchorOffset = defaultAnchorOffset;
+
+        $('html, body').animate({
+          scrollTop: $('#'+anchor).offset().top - anchorOffset
+        }, 500);
+
+      });
     }
   }
 }]);

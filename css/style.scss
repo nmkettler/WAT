@@ -549,20 +549,16 @@ ul#numberList.dropdown-menu ul a li{
 }
 /*=============================================== Training Page ===================================================*/
 
-
 .training_main_container{
-	min-height: 995px; 
-	width:100%;
-	opacity: 1; 
-	background: url(assets/training-sec-one-bg.jpg) no-repeat center center;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
- 	 background-size: cover;
- 	 margin-top: -50px;
- 	 position:relative;
-	
-}
+	background-image: url(assets/training-sec-one-bg.jpg);
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    margin-top: -50px;
+    width: 100%;
+    position:relative;
+    }
 
 .training_inner{
 	margin: 150px auto;
@@ -584,7 +580,7 @@ ul#numberList.dropdown-menu ul a li{
 }
 
 .training_list{
-	margin-top: 20px;
+	margin-top: 42px;
 	columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
@@ -592,6 +588,20 @@ ul#numberList.dropdown-menu ul a li{
     li{
     	font-size: 20px;
     }
+}
+
+.training_box_bottom_sec{
+	margin-top: 42px;
+}
+
+.training_sign_up_btn{
+	background-color: #f87474;
+    color: #e7e7e7;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-top: 20px;
 }
 /*======================= Footer =============================*/
 
