@@ -29,6 +29,10 @@ app.config(['$routeProvider', function($routeProvider) {
 	    	templateUrl: 'views/trainingpage.html',
 	    	controller: 'MainController'
 	    }).
+	    when('/contact', {
+	    	templateUrl: 'views/contact.html',
+	    	controller: 'MainController'
+	    }).
 	    otherwise({
 	      redirectTo: '/home'
 	    });

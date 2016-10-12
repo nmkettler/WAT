@@ -25,7 +25,10 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
       $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeOut(500);
     });
 
-  
+        $('.showMap').click(function(){
+          $('#map').toggle();
+          google.maps.event.trigger(map, "resize");
+        });
 
 }]);
 
