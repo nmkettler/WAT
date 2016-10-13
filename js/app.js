@@ -33,6 +33,14 @@ app.config(['$routeProvider', function($routeProvider) {
 	    	templateUrl: 'views/contact.html',
 	    	controller: 'MainController'
 	    }).
+	    when('/meet_the_team', {
+	    	templateUrl: 'views/meet_the_team.html',
+	    	controller: 'MainController'
+	    }).
+	    when('/faq', {
+	    	templateUrl: 'views/faq.html',
+	    	controller: 'MainController'
+	    }).
 	    otherwise({
 	      redirectTo: '/home'
 	    });

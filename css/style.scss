@@ -7,6 +7,7 @@ $primaryBlack: #171717;
 $primaryBlue: #172735;
 $primaryGray: #aeb5ba;
 $primaryRed: #f87474;
+$fadedGray: #787878;
 
 * {
 margin:0;
@@ -433,8 +434,9 @@ ul#numberList.dropdown-menu ul a li{
 }
 
 .service_main_title{
-	font-size: 60px;
+	font-size: 50px;
 	font-weight: 700;
+	color: $fadedGray;
 }
 .services_page_container{
 	margin-top: 66px;
@@ -444,6 +446,8 @@ ul#numberList.dropdown-menu ul a li{
 	margin: 22px 0;
 	font-size: 30px;
 	font-weight: 700;
+	color: $fadedGray;
+
 }
 
 .inner_services_container{
@@ -584,9 +588,12 @@ ul#numberList.dropdown-menu ul a li{
 	columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-
+    cursor: pointer;
     li{
     	font-size: 20px;
+    	&:hover{
+    		color: $fadedGray;
+    	}
     }
 }
 
@@ -629,7 +636,7 @@ ul#numberList.dropdown-menu ul a li{
     -webkit-columns: 2;
     -moz-columns: 2;
 
-    li{
+   li{
     	font-size: 15px;
     }
 }
@@ -638,7 +645,7 @@ ul#numberList.dropdown-menu ul a li{
 /*=============================================== Contact Us ===================================================*/
 #contactFormStyle{
 	font-weight: 300;
-	color: #787878;
+	color: $fadedGray;
 	padding: 15px;
 	border-radius: 0;
 	border-top: none;
@@ -698,14 +705,15 @@ ul#numberList.dropdown-menu ul a li{
 	line-height: 35px;
 
 }
-.map_class{
-	
-}
+
 #map{
 	width: 100%;
 	height: 400px;
-	display:none;
 	
+}
+
+.map_section{
+	margin-bottom: 100px;
 }
 
 @media screen and (max-width: 785px) {
@@ -725,6 +733,80 @@ ul#numberList.dropdown-menu ul a li{
 
 }
 
+/*=============================================== Meet The Team ===================================================*/
+
+
+.meet_the_team_container{
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+
+}
+
+.staff_rows{
+	margin-top: 50px;
+
+	h4{
+		color: $fadedGray;
+		font-size: 1.7em;
+		font-weight: 700;
+	}
+	p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+	}
+}
+
+.staff_description{
+	margin-top: 50px;
+}
+
+/*=============================================== FAQ===================================================*/
+
+.faq_inner{
+	margin: 100px 0;
+	h1{
+		font-size: 50px;
+		font-weight: 700;
+		color: $fadedGray;
+		padding-bottom: 30px;
+	}
+	h4{
+		color: $fadedGray;
+		font-size: 1.7em;
+		font-weight: 700;
+		margin: 35px 0;	
+		cursor: pointer;
+
+	}
+
+	p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1.2em;
+	}
+	ul li{
+		color: $fadedGray;
+		line-height: 20px;
+		padding-top: 10px;
+		font-weight: 500;
+		font-size: 1.1em;
+		list-style-type: square;
+		margin-left: 25px;
+	}
+}
+
+.faq_answer{
+	display:none;
+	padding: 10px 50px 10px 50px;
+	border-radius: 0;
+	border-top: none;
+	border-right:1px solid #4a90e2;
+	border-left: 1px solid #4a90e2;
+	border-bottom: 1px solid #4a90e2;
+}
 
 /*=============================================== Footer ===================================================*/
 
@@ -759,6 +841,10 @@ ul#numberList.dropdown-menu ul a li{
 		margin-left: 10px;
 		font-size: 20px;
 		color:$primaryGray;
+
+		&:hover{
+			color: $fadedGray;
+		}
 	
 }
 

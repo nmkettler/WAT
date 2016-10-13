@@ -325,14 +325,16 @@ ul#numberList.dropdown-menu ul a li {
       background-color: #172735;
       color: #e7e7e7; }
   .service_main_title {
-    font-size: 60px;
-    font-weight: 700; }
+    font-size: 50px;
+    font-weight: 700;
+    color: #787878; }
   .services_page_container {
     margin-top: 66px; }
   .services_individual_titles {
     margin: 22px 0;
     font-size: 30px;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #787878; }
   .inner_services_container {
     padding: 32px 5px 32px 200px; }
   .labServiceButton {
@@ -425,9 +427,12 @@ ul#numberList.dropdown-menu ul a li {
   margin-top: 42px;
   columns: 2;
   -webkit-columns: 2;
-  -moz-columns: 2; }
+  -moz-columns: 2;
+  cursor: pointer; }
   .training_list li {
     font-size: 20px; }
+    .training_list li:hover {
+      color: #787878; }
 
 .training_box_bottom_sec {
   margin-top: 42px; }
@@ -507,8 +512,10 @@ ul#numberList.dropdown-menu ul a li {
 
 #map {
   width: 100%;
-  height: 400px;
-  display: none; }
+  height: 400px; }
+
+.map_section {
+  margin-bottom: 100px; }
 
 @media screen and (max-width: 785px) {
   #contactFormStyle, .input_name_class, .email, .subject_class, .message_class {
@@ -522,6 +529,62 @@ ul#numberList.dropdown-menu ul a li {
     border-bottom: 1px solid #4a90e2;
     width: calc(100% - 2 * 10px);
     font-size: 1em; } }
+
+/*=============================================== Meet The Team ===================================================*/
+.meet_the_team_container {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.staff_rows {
+  margin-top: 50px; }
+  .staff_rows h4 {
+    color: #787878;
+    font-size: 1.7em;
+    font-weight: 700; }
+  .staff_rows p {
+    color: #787878;
+    line-height: 20px;
+    font-weight: 500; }
+
+.staff_description {
+  margin-top: 50px; }
+
+/*=============================================== FAQ===================================================*/
+.faq_inner {
+  margin: 100px 0; }
+  .faq_inner h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #787878;
+    padding-bottom: 30px; }
+  .faq_inner h4 {
+    color: #787878;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 35px 0;
+    cursor: pointer; }
+  .faq_inner p {
+    color: #787878;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 1.2em; }
+  .faq_inner ul li {
+    color: #787878;
+    line-height: 20px;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 1.1em;
+    list-style-type: square;
+    margin-left: 25px; }
+
+.faq_answer {
+  display: none;
+  padding: 10px 50px 10px 50px;
+  border-radius: 0;
+  border-top: none;
+  border-right: 1px solid #4a90e2;
+  border-left: 1px solid #4a90e2;
+  border-bottom: 1px solid #4a90e2; }
 
 /*=============================================== Footer ===================================================*/
 .site-footer {
@@ -548,6 +611,8 @@ ul#numberList.dropdown-menu ul a li {
   margin-left: 10px;
   font-size: 20px;
   color: #aeb5ba; }
+  .footer_sections a:hover {
+    color: #787878; }
 
 /*======================= Scrolling Animations =============================*/
 #back-to-top {
