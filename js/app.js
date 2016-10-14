@@ -41,6 +41,14 @@ app.config(['$routeProvider', function($routeProvider) {
 	    	templateUrl: 'views/faq.html',
 	    	controller: 'MainController'
 	    }).
+	    when('/forms', {
+	    	templateUrl: 'views/forms.html',
+	    	controller: 'MainController'
+	    }).
+	    when('/coming-soon', {
+	    	templateUrl: 'views/coming_soon.html',
+	    	controller: 'MainController'
+	    }).
 	    otherwise({
 	      redirectTo: '/home'
 	    });

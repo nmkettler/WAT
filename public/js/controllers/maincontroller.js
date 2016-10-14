@@ -19,16 +19,21 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
           offset: 100
         });
 
+        $('.flipInDiv').addClass('.hide_me').viewportChecker({
+          classToAdd: 'visible animated flipInX',
+          offset: 100
+        });
+
+        $('.shakeDiv').addClass('.hide_me').viewportChecker({
+          classToAdd: 'visible animated wobble',
+          offset: 100
+        });
+
   	$('ul.nav li.dropdown').hover(function(){
       $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeIn(500);
     }, function(){
       $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeOut(500);
     });
-
-        $('.showMap').click(function(){
-          $('#map').toggle();
-          google.maps.event.trigger(map, "resize");
-        });
 
 }]);
 
@@ -94,6 +99,14 @@ app.directive("slideToShowDiv", function(){
     restrict: "A",
     link: function(scope, elem, attrs){
       $('.labServiceButton').click(function(){
+        if($(this).next("div").is(":hidden")) {
+          $(this).next("div").slideDown("slow");
+        }else{
+          $(this).next("div").slideUp("slow");
+        }
+      });
+
+      $('.faq_question').click(function(){
         if($(this).next("div").is(":hidden")) {
           $(this).next("div").slideDown("slow");
         }else{

@@ -24,6 +24,11 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
           offset: 100
         });
 
+        $('.shakeDiv').addClass('.hide_me').viewportChecker({
+          classToAdd: 'visible animated wobble',
+          offset: 100
+        });
+
   	$('ul.nav li.dropdown').hover(function(){
       $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeIn(500);
     }, function(){

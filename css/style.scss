@@ -105,6 +105,14 @@ ul#numberList.dropdown-menu ul a li{
 	width:120px;
 }
 
+@media screen and (max-width: 485px){
+	.nav_angle_right{
+		a{
+			display:none;
+		}
+	}
+}
+
 /*======================= First Section =============================*/
 
 
@@ -222,8 +230,10 @@ ul#numberList.dropdown-menu ul a li{
 		border:none;
 		width: 100px;
 		height: 30px;
-		margin: 0px 10px;
+		margin: 15px;
+		padding: 5px 90px 5px 10px;
 		border-radius: 0 !important;
+		border:none;
 }
 .main-hero-bg{
 	min-height: 667px; 
@@ -384,6 +394,21 @@ ul#numberList.dropdown-menu ul a li{
 	margin:0;
 	padding:0;
 	vertical-align: middle;
+}
+
+@media screen and (max-width: 445px){
+	.certification_image_container a img{
+	width: 70px;
+	margin:0;
+	padding:0;
+	vertical-align: middle;
+	}
+	.certification_title{
+	font-size:20px;
+	margin-top: 25px;
+	font-weight:700;
+	text-align:center;
+}
 }
 
 /*======================= Third Section =============================*/
@@ -709,7 +734,7 @@ ul#numberList.dropdown-menu ul a li{
 #map{
 	width: 100%;
 	height: 400px;
-	
+	background-color: $fadedGray;
 }
 
 .map_section{
@@ -808,11 +833,83 @@ ul#numberList.dropdown-menu ul a li{
 	border-bottom: 1px solid #4a90e2;
 }
 
+/*=============================================== Forms ===================================================*/
+.forms_inner{
+	margin-top: 100px;
+	margin-bottom: 50px;
+
+	h1{
+		font-size: 50px;
+		font-weight: 700;
+		color: $fadedGray;
+		padding-bottom: 20px;
+	}
+	p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1.2em;
+	}
+	ul li{
+		color: $fadedGray;
+		line-height: 20px;
+		padding-top: 10px;
+		font-weight: 500;
+		font-size: 1.1em;
+
+	}
+}
+#forms_note{
+	font-style: italic
+}
+.forms_pdfs{
+	margin-bottom: 150px;
+}
+
+/*=============================================== coming_soon ===================================================*/
+
+.coming_soon_inner{
+	margin: 100px 0;
+	h1{
+		font-size: 50px;
+		font-weight: 700;
+		color: $fadedGray;
+		padding-bottom: 5px;
+	}
+	h4{
+		color: $fadedGray;
+		font-size: 1.7em;
+		font-weight: 700;
+		margin: 35px 0;	
+		cursor: pointer;
+
+	}
+
+	p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1.2em;
+	}
+	img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 785px) {
+	.coming_soon_inner{
+		img{
+			width: 200px;
+		}
+	}
+	
+}
+
 /*=============================================== Footer ===================================================*/
 
 
 .site-footer{
-	padding: 66px 0;
+	padding: 66px 0 5px 0;
 	background-color: $primaryBlue;
 	color: $primaryWhite;
 }
@@ -847,7 +944,12 @@ ul#numberList.dropdown-menu ul a li{
 		}
 	
 }
-
+#noah_id{
+	font-size: 15px;
+}
+.noah_class{
+	margin-top: 70px;
+}
 /*======================= Scrolling Animations =============================*/
 
 
@@ -907,3 +1009,41 @@ ul#numberList.dropdown-menu ul a li{
 
 .post{ visibility: hidden; }
 .animated { visibility: visible !important; }
+
+/*==================Rotate collapsed navbar to "X"===================*/
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+  
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+  &.collapsed {
+    .top-bar {
+      transform: rotate(0);      
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+}
