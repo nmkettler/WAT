@@ -9,8 +9,8 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
 
     //typed.js functionality
         $(".typer").typed({
-            strings: ["Asbestos Testing", "Lead Testing", "Mold Testing"],
-            typeSpeed: 100
+            strings: ["Asbestos Testing", "Lead Testing", "Mold Testing", "Asbestos Testing"],
+            typeSpeed: 50
           });
 
         //animated.js animation
