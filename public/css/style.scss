@@ -90,7 +90,7 @@ ul#numberList.dropdown-menu ul a li{
 
 .navButton{
 	background-color: #f87474;
-	color: #e7e7e7;
+	color: #fff;
 	font-weight: 700;
 	border:none;
 	border-radius: 5px;
@@ -571,7 +571,21 @@ ul#numberList.dropdown-menu ul a li{
 	background: url(assets/bg-slide-down.jpg) no-repeat center center;
 	
 }
+.inner_services_container{
+	margin-bottom: 100px;
+}
+.labServiceButton{
+	background-color: #f87474;
+	padding: 5px 15px;
+	color: $primaryWhite;
+	margin-top: 20px;
+	border-color: $primaryWhite;
+	&:hover{
+		background-color: $primaryBlue;	
+		color: $primaryWhite;
 
+	}
+}
 .mold_row{
 	background: url(assets/bg-slide-down.jpg) no-repeat center center;
 }
@@ -730,12 +744,12 @@ ul#numberList.dropdown-menu ul a li{
 	line-height: 35px;
 
 }
-
-#map{
-	width: 100%;
-	height: 400px;
-	background-color: $fadedGray;
+#gmaps {
+    width: 100%;
+    height: 450px;
 }
+
+.angular-google-map-container { height: 400px; }
 
 .map_section{
 	margin-bottom: 100px;
