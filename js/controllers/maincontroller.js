@@ -6,18 +6,25 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
       $location.path(path);
     }
 
-    //typed.js functionality
+
+}]);
+
+app.directive("animatedFunctionality", ["$interval", function($interval){
+  return{
+    restrict: "A",
+    link: function(scope, elem, attrs){
+      //typed.js functionality
         $(".typer").typed({
             strings: ["Asbestos Testing", "Lead Testing", "Mold Testing", "Asbestos Testing"],
             typeSpeed: 50
           });
 
-        //animated.js animation
+             //animated.js post animation
         $('.post').addClass('.hide_me').viewportChecker({
           classToAdd: 'visible animated fadeIn',
           offset: 100
         });
-
+        //flip in Meet the Team
         $('.flipInDiv').addClass('.hide_me').viewportChecker({
           classToAdd: 'visible animated flipInX',
           offset: 100
@@ -27,14 +34,22 @@ app.controller("MainController", ['$scope', '$routeParams','$location', function
           classToAdd: 'visible animated wobble',
           offset: 100
         });
+    }
+  }
+}])
 
-  	$('ul.nav li.dropdown').hover(function(){
-      $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeIn(500);
-    }, function(){
-      $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeOut(500);
+app.directive("navMenuHover", ["$interval", function($interval){
+  return{
+    restrict: "A",
+    link: function(scope, elem, attrs) {   
+      $('ul.nav li.dropdown').hover(function(){
+        $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeIn(500);
+      }, function(){
+        $(this).find('.dropdown-menu').stop(true,true).delay(200).fadeOut(500);
     });
 
-
+    }
+  }
 }]);
 
 app.directive("scrollToDiv", ["$interval", function($interval){

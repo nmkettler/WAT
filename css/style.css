@@ -170,7 +170,7 @@ button:hover {
     margin-left: 10px; } }
 
 @media screen and (max-width: 785px) {
-  #mobilehomebuttons, #contactButton, #learnMoreButton {
+  #mobilehomebuttons, #contactButton {
     font-weight: 700;
     font-size: 15px;
     border: none;
@@ -181,7 +181,7 @@ button:hover {
     border-radius: 0 !important;
     border: none; }
   .main-hero-bg {
-    min-height: 667px;
+    min-height: 650px;
     width: 100%;
     opacity: 1;
     background: url(assets/sec1BG.jpg) no-repeat center center;
@@ -215,6 +215,14 @@ button:hover {
     color: #e7e7e7;
     font-size: 15px; }
   #learnMoreButton {
+    font-size: 15px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin: 15px;
+    padding: 5px 90px 5px 10px;
+    border-radius: 0 !important;
+    border: none;
     background-color: #f87474;
     border: 1px solid #000; }
     #learnMoreButton:hover {
@@ -225,15 +233,11 @@ button:hover {
     position: absolute;
     bottom: 10px;
     width: 100%; }
-  .scrollArrowOuter {
-    /* Make parent elemnts width 100% so child (scrollArrow) can center*/
-    position: absolute;
-    bottom: 10px;
-    width: 100%; }
   .scrollArrow {
     width: 35px;
     height: 35px;
-    margin: 0px auto;
+    margin: 0px 160.5px;
+    /* margin:0px auto;Off center by a couple of pixels*/
     border: 1px solid #fff;
     border-radius: 50px;
     background: transparent;
@@ -406,16 +410,16 @@ button:hover {
   .asbestos_lab, .lead_lab, .mold_lab, .demo_lab {
     display: none; }
   .service_main_title {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700; }
   .services_page_container {
     margin-top: 66px; }
   .services_individual_titles {
     margin: 22px 0;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700; }
   .asbestos_row, .lead_row, .mold_row, .demo_row {
-    margin-top: 100px; }
+    margin-top: 50px; }
   .asbestos_row {
     background: url(assets/bg-slide-down.jpg) no-repeat center center; }
   .inner_services_container {
@@ -554,6 +558,15 @@ button:hover {
 
 .map_section {
   margin-bottom: 100px; }
+  .map_section h2 {
+    padding-bottom: 20px; }
+  .map_section h4 {
+    padding-bottom: 20px; }
+  .map_section ul li {
+    padding: 20px 10px 0px 0px;
+    display: inline-block; }
+  .map_section p {
+    padding-bottom: 20px; }
 
 @media screen and (max-width: 785px) {
   #contactFormStyle, .input_name_class, .email, .subject_class, .message_class {
@@ -586,6 +599,21 @@ button:hover {
 
 .staff_description {
   margin-top: 50px; }
+
+@media screen and (max-width: 785px) {
+  .meet_the_team_container {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .staff_rows {
+    margin-top: 25px; }
+    .staff_rows h4 {
+      color: #787878;
+      font-size: 1.7em;
+      font-weight: 700; }
+    .staff_rows p {
+      color: #787878;
+      line-height: 20px;
+      font-weight: 500; } }
 
 /*=============================================== FAQ===================================================*/
 .faq_inner {
@@ -624,6 +652,42 @@ button:hover {
   border-left: 1px solid #4a90e2;
   border-bottom: 1px solid #4a90e2; }
 
+@media screen and (max-width: 785px) {
+  .faq_inner {
+    margin: 100px 0; }
+    .faq_inner h1 {
+      font-size: 35px;
+      font-weight: 700;
+      color: #787878;
+      padding-bottom: 30px; }
+    .faq_inner h4 {
+      color: #787878;
+      font-size: 1.4em;
+      font-weight: 700;
+      margin: 35px 0;
+      cursor: pointer; }
+    .faq_inner p {
+      color: #787878;
+      line-height: 20px;
+      font-weight: 500;
+      font-size: 1.2em; }
+    .faq_inner ul li {
+      color: #787878;
+      line-height: 20px;
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 1.1em;
+      list-style-type: square;
+      margin-left: 25px; }
+  .faq_answer {
+    display: none;
+    padding: 10px 50px 10px 50px;
+    border-radius: 0;
+    border-top: none;
+    border-right: 1px solid #4a90e2;
+    border-left: 1px solid #4a90e2;
+    border-bottom: 1px solid #4a90e2; } }
+
 /*=============================================== Forms ===================================================*/
 .forms_inner {
   margin-top: 100px;
@@ -651,6 +715,27 @@ button:hover {
 .forms_pdfs {
   margin-bottom: 150px; }
 
+@media screen and (max-width: 785px) {
+  .forms_inner {
+    margin-top: 100px;
+    margin-bottom: 50px; }
+    .forms_inner h1 {
+      font-size: 35px;
+      font-weight: 700;
+      color: #787878;
+      padding-bottom: 20px; }
+    .forms_inner p {
+      color: #787878;
+      line-height: 20px;
+      font-weight: 500;
+      font-size: 1.2em; }
+    .forms_inner ul li {
+      color: #787878;
+      line-height: 20px;
+      padding-top: 10px;
+      font-weight: 500;
+      font-size: 1.1em; } }
+
 /*=============================================== coming_soon ===================================================*/
 .coming_soon_inner {
   margin: 100px 0; }
@@ -669,13 +754,53 @@ button:hover {
     color: #787878;
     line-height: 20px;
     font-weight: 500;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    padding-top: 50px; }
   .coming_soon_inner img {
     width: 400px; }
 
 @media screen and (max-width: 785px) {
   .coming_soon_inner img {
-    width: 200px; } }
+    width: 200px; }
+  .coming_soon_inner p {
+    color: #787878;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-top: 50px; } }
+
+/*=============================================== Thank_you ===================================================*/
+.thank_you_inner {
+  margin: 100px 0; }
+  .thank_you_inner h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #787878;
+    padding-bottom: 5px; }
+  .thank_you_inner h4 {
+    color: #787878;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 35px 0;
+    cursor: pointer; }
+  .thank_you_inner p {
+    color: #787878;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-top: 50px; }
+  .thank_you_inner img {
+    width: 400px; }
+
+@media screen and (max-width: 785px) {
+  .thank_you_inner img {
+    width: 200px; }
+  .thank_you_inner p {
+    color: #787878;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-top: 50px; } }
 
 /*=============================================== Footer ===================================================*/
 .site-footer {
@@ -764,7 +889,7 @@ button:hover {
     transition: 0.3s ease-in-out;
     opacity: 0; } }
 
-.post {
+.post, .flipInDiv, .shakeDiv {
   visibility: hidden; }
 
 .animated {

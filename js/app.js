@@ -17,8 +17,8 @@ app.config(['$routeProvider', function($routeProvider) {
 	      templateUrl: 'views/home.html',
 	      controller: 'MainController'
 	    }).
-	    when('/test', {
-	      templateUrl: 'views/test.html',
+	    when('/thank-you', {
+	      templateUrl: 'views/thank_you-page.html',
 	      controller: 'MainController'
 	    }).
 	    when('/services', {

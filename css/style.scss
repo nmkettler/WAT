@@ -246,7 +246,7 @@ ul#numberList.dropdown-menu ul a li{
 		border:none;
 }
 .main-hero-bg{
-	min-height: 667px; 
+	min-height: 650px; 
 	width:100%;
 	opacity: 1; 
 	background: url(assets/sec1BG.jpg) no-repeat center center;
@@ -296,7 +296,14 @@ ul#numberList.dropdown-menu ul a li{
 	}
 
 	#learnMoreButton{
-		@extend #mobilehomebuttons;
+		font-size: 15px;
+		border:none;
+		width: 100px;
+		height: 30px;
+		margin: 15px;
+		padding: 5px 90px 5px 10px;
+		border-radius: 0 !important;
+		border:none;
 		background-color: #f87474;
 		border: 1px solid #000;
 		&:hover{
@@ -307,12 +314,6 @@ ul#numberList.dropdown-menu ul a li{
 	}
 
 	.scrollArrowOuter{ /* Make parent elemnts width 100% so child (scrollArrow) can center*/
-	position:absolute;
-	bottom:10px;
-	width:100%;
-	}
-
-	.scrollArrowOuter{ /* Make parent elemnts width 100% so child (scrollArrow) can center*/
 		position:absolute;
 		bottom:10px;
 		width:100%;
@@ -320,7 +321,8 @@ ul#numberList.dropdown-menu ul a li{
 	.scrollArrow{	
 		width:35px; 
 		height:35px;
-		margin:0px auto;
+		margin:0px 160.5px;
+		/* margin:0px auto;Off center by a couple of pixels*/		
 		border: 1px solid #fff;
 		border-radius:50px;
 		background: rgba(0,0,0,0);
@@ -560,7 +562,7 @@ ul#numberList.dropdown-menu ul a li{
 }
 
 .service_main_title{
-	font-size: 60px;
+	font-size: 45px;
 	font-weight: 700;
 }
 .services_page_container{
@@ -569,12 +571,12 @@ ul#numberList.dropdown-menu ul a li{
 
 .services_individual_titles{
 	margin: 22px 0;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 700;
 }
 
 .asbestos_row,.lead_row,.mold_row,.demo_row{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .asbestos_row{
@@ -763,6 +765,21 @@ ul#numberList.dropdown-menu ul a li{
 
 .map_section{
 	margin-bottom: 100px;
+
+	h2{
+		padding-bottom: 20px;
+	}
+	h4{
+		padding-bottom: 20px;
+	}
+	ul li{
+		padding: 20px 10px 0px 0px;
+		display: inline-block;
+	}
+	p{
+		padding-bottom: 20px;
+
+	}
 }
 
 @media screen and (max-width: 785px) {
@@ -811,6 +828,29 @@ ul#numberList.dropdown-menu ul a li{
 	margin-top: 50px;
 }
 
+@media screen and (max-width: 785px) {
+.meet_the_team_container{
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+
+}
+.staff_rows{
+	margin-top: 25px;
+
+	h4{
+		color: $fadedGray;
+		font-size: 1.7em;
+		font-weight: 700;
+	}
+	p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+	}
+}
+}
+
 /*=============================================== FAQ===================================================*/
 
 .faq_inner{
@@ -857,6 +897,53 @@ ul#numberList.dropdown-menu ul a li{
 	border-bottom: 1px solid #4a90e2;
 }
 
+@media screen and (max-width: 785px) {
+.faq_inner{
+	margin: 100px 0;
+	h1{
+		font-size: 35px;
+		font-weight: 700;
+		color: $fadedGray;
+		padding-bottom: 30px;
+	}
+	h4{
+		color: $fadedGray;
+		font-size: 1.4em;
+		font-weight: 700;
+		margin: 35px 0;	
+		cursor: pointer;
+
+	}
+
+	p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1.2em;
+	}
+	ul li{
+		color: $fadedGray;
+		line-height: 20px;
+		padding-top: 10px;
+		font-weight: 500;
+		font-size: 1.1em;
+		list-style-type: square;
+		margin-left: 25px;
+	}
+}
+
+.faq_answer{
+	display:none;
+	padding: 10px 50px 10px 50px;
+	border-radius: 0;
+	border-top: none;
+	border-right:1px solid #4a90e2;
+	border-left: 1px solid #4a90e2;
+	border-bottom: 1px solid #4a90e2;
+}
+
+}
+
 /*=============================================== Forms ===================================================*/
 .forms_inner{
 	margin-top: 100px;
@@ -890,6 +977,34 @@ ul#numberList.dropdown-menu ul a li{
 	margin-bottom: 150px;
 }
 
+@media screen and (max-width: 785px) {
+	.forms_inner{
+	margin-top: 100px;
+	margin-bottom: 50px;
+
+	h1{
+		font-size: 35px;
+		font-weight: 700;
+		color: $fadedGray;
+		padding-bottom: 20px;
+	}
+	p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1.2em;
+	}
+	ul li{
+		color: $fadedGray;
+		line-height: 20px;
+		padding-top: 10px;
+		font-weight: 500;
+		font-size: 1.1em;
+
+	}
+}
+}
+
 /*=============================================== coming_soon ===================================================*/
 
 .coming_soon_inner{
@@ -914,6 +1029,8 @@ ul#numberList.dropdown-menu ul a li{
 		line-height: 20px;
 		font-weight: 500;
 		font-size: 1.2em;
+		padding-top: 50px;
+
 	}
 	img{
 		width: 400px;
@@ -925,10 +1042,63 @@ ul#numberList.dropdown-menu ul a li{
 		img{
 			width: 200px;
 		}
+		p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1.2em;
+		padding-top: 50px;
+	}
 	}
 	
 }
+/*=============================================== Thank_you ===================================================*/
 
+.thank_you_inner{
+	margin: 100px 0;
+	h1{
+		font-size: 50px;
+		font-weight: 700;
+		color: $fadedGray;
+		padding-bottom: 5px;
+	}
+	h4{
+		color: $fadedGray;
+		font-size: 1.7em;
+		font-weight: 700;
+		margin: 35px 0;	
+		cursor: pointer;
+
+	}
+
+	p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1.2em;
+		padding-top: 50px;
+		
+	}
+	img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 785px) {
+	.thank_you_inner{
+		img{
+			width: 200px;
+		}
+		p{
+		color: $fadedGray;
+		line-height: 20px;
+		font-weight: 500;
+		font-size: 1.2em;
+		padding-top: 50px;
+	}
+	}
+	
+}
 /*=============================================== Footer ===================================================*/
 
 
@@ -1031,7 +1201,7 @@ ul#numberList.dropdown-menu ul a li{
   }
 }
 
-.post{ visibility: hidden; }
+.post, .flipInDiv, .shakeDiv { visibility: hidden; }
 .animated { visibility: visible !important; }
 
 /*==================Rotate collapsed navbar to "X"===================*/
